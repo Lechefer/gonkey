@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/lamoda/gonkey/checker"
-	"github.com/lamoda/gonkey/compare"
-	"github.com/lamoda/gonkey/models"
+	"github.com/lechefer/gonkey/checker"
+	"github.com/lechefer/gonkey/compare"
+	"github.com/lechefer/gonkey/models"
 
 	"github.com/fatih/color"
 	"github.com/kylelemons/godebug/pretty"

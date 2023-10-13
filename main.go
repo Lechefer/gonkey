@@ -17,17 +17,17 @@ import (
 	"github.com/go-redis/redis/v9"
 	"github.com/joho/godotenv"
 
-	"github.com/lamoda/gonkey/checker/response_body"
-	"github.com/lamoda/gonkey/checker/response_db"
-	"github.com/lamoda/gonkey/fixtures"
-	redisLoader "github.com/lamoda/gonkey/fixtures/redis"
-	"github.com/lamoda/gonkey/output/allure_report"
-	"github.com/lamoda/gonkey/output/console_colored"
-	"github.com/lamoda/gonkey/runner"
-	aerospikeAdapter "github.com/lamoda/gonkey/storage/aerospike"
-	mongoAdapter "github.com/lamoda/gonkey/storage/mongo"
-	"github.com/lamoda/gonkey/testloader/yaml_file"
-	"github.com/lamoda/gonkey/variables"
+	"github.com/lechefer/gonkey/checker/response_body"
+	"github.com/lechefer/gonkey/checker/response_db"
+	"github.com/lechefer/gonkey/fixtures"
+	redisLoader "github.com/lechefer/gonkey/fixtures/redis"
+	"github.com/lechefer/gonkey/output/allure_report"
+	"github.com/lechefer/gonkey/output/console_colored"
+	"github.com/lechefer/gonkey/runner"
+	aerospikeAdapter "github.com/lechefer/gonkey/storage/aerospike"
+	mongoAdapter "github.com/lechefer/gonkey/storage/mongo"
+	"github.com/lechefer/gonkey/testloader/yaml_file"
+	"github.com/lechefer/gonkey/variables"
 )
 
 type config struct {

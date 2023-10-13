@@ -9,14 +9,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/lamoda/gonkey/checker"
-	"github.com/lamoda/gonkey/cmd_runner"
-	"github.com/lamoda/gonkey/fixtures"
-	"github.com/lamoda/gonkey/mocks"
-	"github.com/lamoda/gonkey/models"
-	"github.com/lamoda/gonkey/output"
-	"github.com/lamoda/gonkey/testloader"
-	"github.com/lamoda/gonkey/variables"
+	"github.com/lechefer/gonkey/checker"
+	"github.com/lechefer/gonkey/cmd_runner"
+	"github.com/lechefer/gonkey/fixtures"
+	"github.com/lechefer/gonkey/mocks"
+	"github.com/lechefer/gonkey/models"
+	"github.com/lechefer/gonkey/output"
+	"github.com/lechefer/gonkey/testloader"
+	"github.com/lechefer/gonkey/variables"
 )
 
 type Config struct {

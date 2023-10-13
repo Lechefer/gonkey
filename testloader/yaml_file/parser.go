@@ -8,7 +8,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/lamoda/gonkey/models"
+	"github.com/lechefer/gonkey/models"
 
 	"gopkg.in/yaml.v2"
 )

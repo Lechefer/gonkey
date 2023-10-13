@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"text/template"
 
-	"github.com/lamoda/gonkey/models"
+	"github.com/lechefer/gonkey/models"
 )
 
 type TestingOutput struct{}

@@ -13,7 +13,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/lamoda/gonkey/models"
+	"github.com/lechefer/gonkey/models"
 )
 
 func newClient(proxyURL *url.URL) *http.Client {

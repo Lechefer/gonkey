@@ -13,8 +13,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/lamoda/gonkey/compare"
-	"github.com/lamoda/gonkey/xmlparsing"
+	"github.com/lechefer/gonkey/compare"
+	"github.com/lechefer/gonkey/xmlparsing"
 	"github.com/tidwall/gjson"
 )
 
@@ -22,14 +22,14 @@ type verifier interface {
 	Verify(r *http.Request) []error
 }
 
-type nopConstraint struct {}
+type nopConstraint struct{}
 
 func (c *nopConstraint) Verify(r *http.Request) []error {
 	return nil
 }
 
 type bodyMatchesXMLConstraint struct {
-	expectedBody interface{}
+	expectedBody  interface{}
 	compareParams compare.CompareParams
 }
 
@@ -40,7 +40,7 @@ func newBodyMatchesXMLConstraint(expected string, params compare.CompareParams) 
 	}
 
 	res := &bodyMatchesXMLConstraint{
-		expectedBody: expectedBody,
+		expectedBody:  expectedBody,
 		compareParams: params,
 	}
 	return res, nil
@@ -66,7 +66,7 @@ func (c *bodyMatchesXMLConstraint) Verify(r *http.Request) []error {
 }
 
 type bodyMatchesJSONConstraint struct {
-	expectedBody interface{}
+	expectedBody  interface{}
 	compareParams compare.CompareParams
 }
 
@@ -77,7 +77,7 @@ func newBodyMatchesJSONConstraint(expected string, params compare.CompareParams)
 		return nil, err
 	}
 	res := &bodyMatchesJSONConstraint{
-		expectedBody: expectedBody,
+		expectedBody:  expectedBody,
 		compareParams: params,
 	}
 	return res, nil
@@ -102,8 +102,8 @@ func (c *bodyMatchesJSONConstraint) Verify(r *http.Request) []error {
 }
 
 type bodyJSONFieldMatchesJSONConstraint struct {
-	path     string
-	expected interface{}
+	path          string
+	expected      interface{}
 	compareParams compare.CompareParams
 }
 
@@ -114,8 +114,8 @@ func newBodyJSONFieldMatchesJSONConstraint(path, expected string, params compare
 		return nil, err
 	}
 	res := &bodyJSONFieldMatchesJSONConstraint{
-		path:     path,
-		expected: v,
+		path:          path,
+		expected:      v,
 		compareParams: params,
 	}
 	return res, nil

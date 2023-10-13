@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/textproto"
 
-	"github.com/lamoda/gonkey/checker"
-	"github.com/lamoda/gonkey/compare"
-	"github.com/lamoda/gonkey/models"
+	"github.com/lechefer/gonkey/checker"
+	"github.com/lechefer/gonkey/compare"
+	"github.com/lechefer/gonkey/models"
 )
 
 type ResponseHeaderChecker struct{}

@@ -2,16 +2,16 @@ package fixtures
 
 import (
 	"database/sql"
-	"github.com/lamoda/gonkey/fixtures/mongo"
-	mongoAdapter "github.com/lamoda/gonkey/storage/mongo"
+	"github.com/lechefer/gonkey/fixtures/mongo"
+	mongoAdapter "github.com/lechefer/gonkey/storage/mongo"
 	"strings"
 
 	_ "github.com/lib/pq"
 
-	"github.com/lamoda/gonkey/fixtures/aerospike"
-	"github.com/lamoda/gonkey/fixtures/mysql"
-	"github.com/lamoda/gonkey/fixtures/postgres"
-	aerospikeClient "github.com/lamoda/gonkey/storage/aerospike"
+	"github.com/lechefer/gonkey/fixtures/aerospike"
+	"github.com/lechefer/gonkey/fixtures/mysql"
+	"github.com/lechefer/gonkey/fixtures/postgres"
+	aerospikeClient "github.com/lechefer/gonkey/storage/aerospike"
 )
 
 type DbType int

@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/lamoda/gonkey/models"
-	"github.com/lamoda/gonkey/variables"
+	"github.com/lechefer/gonkey/models"
+	"github.com/lechefer/gonkey/variables"
 )
 
 const requestOriginal = `{"reqParam": "{{ $reqParam }}"}`

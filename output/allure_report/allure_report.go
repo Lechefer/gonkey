@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/lamoda/gonkey/models"
+	"github.com/lechefer/gonkey/models"
 )
 
 type AllureReportOutput struct {

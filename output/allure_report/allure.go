@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/lamoda/gonkey/output/allure_report/beans"
+	"github.com/lechefer/gonkey/output/allure_report/beans"
 )
 
 type Allure struct {
@@ -104,7 +104,7 @@ func (a *Allure) PendingCase(testName string, start time.Time) {
 	a.EndCase("pending", errors.New("test ignored"), start)
 }
 
-//utils
+// utils
 func getBufferInfo(buf bytes.Buffer, typ string) (string, string) {
 	//    exts,err := mime.ExtensionsByType(typ)
 	//    if err != nil {
